@@ -34,7 +34,7 @@ body {
 .slideshow-inside  a,
 .slideshow-inside  h2,
 .slideshow-inside  br) {
-	line-height: auto;
+	line-height: 30px;
 }
 
 .page-header {
