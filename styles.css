@@ -28,6 +28,7 @@ body {
 	right: 0;
 	
 	float: none;
+	clear: both;
 }
 
 .page-header {
