@@ -30,6 +30,9 @@ body {
 	float: none;
 	clear: both;
 }
+.slideshow-inside-text {
+	line-height: auto;
+}
 
 .page-header {
 	padding: 0;
