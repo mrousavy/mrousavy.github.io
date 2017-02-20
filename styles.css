@@ -33,7 +33,7 @@ body {
 .slideshow-inside img,
 .slideshow-inside  a,
 .slideshow-inside  h2,
-.slideshow-inside  br) {
+.slideshow-inside  br {
 	line-height: 30px;
 }
 
