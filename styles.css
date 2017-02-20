@@ -9,7 +9,6 @@ body {
 	position: relative;
 }
 .slideshow-image {
-	max-width: 1700px;
 	height: 100%;
 	position: absolute;
 	left: 50%;
