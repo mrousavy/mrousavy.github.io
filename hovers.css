@@ -47,7 +47,7 @@ figure{
   position: relative;
   display: inline-block;
   vertical-align: top;
-  border: 5px solid #fff;
+  /*border: 5px solid #fff;*/
   box-shadow: 0 0 5px #ddd;
   margin: 1em;
 }
