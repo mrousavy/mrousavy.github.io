@@ -1,13 +1,12 @@
-.outer-container {
+.slideshow {
 	width: 100%;
 	height: 400px;
 	overflow: hidden;
 	position: relative;
 }
-.banner {
+.slideshow-image {
 	height: 100%;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	
 }
