@@ -7,11 +7,8 @@
 }
 
 html, body{
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Lato',sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  margin: 0;
+  padding: 0;
   height: 100%;
   color: #fff;
 }
@@ -31,7 +28,7 @@ html, body{
   display: table;
 }
 
-h1{
+/*h1{
   color: #2c3e50;
   text-align: center;
   margin: 0;
@@ -41,7 +38,7 @@ h1{
   text-align: center;
   color: #fff;
   font-weight: 300;
-}
+}*/
 
 figure{
   width: 400px;
