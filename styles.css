@@ -18,6 +18,7 @@ body {
 	filter: blur(3px);
 }
 .slideshow-inside {
+	display: table-cell;
 	position: absolute;
 	text-align: center;
 	vertical-align: middle;
@@ -29,6 +30,7 @@ body {
 	right: 0;
 }
 .slideshow-inside-text {
+	display: inline-block:
 	line-height: 30px;
 	margin: auto;
 }
