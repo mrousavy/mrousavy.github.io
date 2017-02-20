@@ -30,9 +30,8 @@ body {
 	float: none;
 	clear: both;
 }
-.slideshow-inside-text {
-	height: 100%;
-	line-height: 30px;
+.slideshow-inside (img, a, h2, br) {
+	line-height: auto;
 }
 
 .page-header {
