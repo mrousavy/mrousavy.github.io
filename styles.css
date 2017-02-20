@@ -47,9 +47,20 @@ body {
 .grow:hover {
 	transform: scale(1.1);
 }
-.graybuttons {
-	background-color: #e2e2e2;
-	color: gray;
-	border-radius: 5px;
-	border: 2px solid gray
-}
+.buttons {
+    float:right;
+    background:#2ECCFA;
+    border:none;
+    margin:14px;
+    padding:10px 24px;
+    color:#FFF;
+    -webkit-border-radius:5px;
+    cursor:pointer;
+    -webkit-transition: all 100ms ease;
+    &:hover{
+      background:lighten(#2ECCFA, 20%);
+      margin:6px;
+      padding:18px 32px;
+      -webkit-transition: all 100ms ease;
+    }
+  }
