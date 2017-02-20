@@ -30,7 +30,10 @@ body {
 	float: none;
 	clear: both;
 }
-.slideshow-inside (img, a, h2, br) {
+.slideshow-inside img,
+.slideshow-inside  a,
+.slideshow-inside  h2,
+.slideshow-inside  br) {
 	line-height: auto;
 }
 
