@@ -10,3 +10,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+.page-header {
+	padding: 0;
+}
