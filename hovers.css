@@ -6,13 +6,6 @@
           transition: all 0.3s ease-in-out;
 }
 
-html, body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  color: #fff;
-}
-
 .container{
   width: 1024px;
   max-width: 100%;
