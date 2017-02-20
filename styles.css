@@ -30,6 +30,9 @@ body {
 	right: 0;
 }
 .slideshow-inside-text {
+	background-color: white;
+	border: solid 1px white;
+	border-radius: 15px;
 	line-height: 30px;
 	margin: auto;
 }
