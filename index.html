@@ -1,124 +1,413 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<!--Header Info-->
-  <head>
-    <meta charset="UTF-8">
-    <title>mrousavy</title> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<meta name="theme-color" content="#157878">-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/assets/css/style.css?v=02aab2f2bcc65ddc28d15cf29cc47c7bdb695dbc">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="hovers.css" />
-    <link rel="stylesheet" href="buttons.css" />
-    <link rel="icon" type="image/png" href="Images/Profilepic_round.png" />
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  </head>
-  <body>
-	  <div class="container">
-		  <p align="center">WIP</p>
-		  <p align="center">
-			<a href="mailto:marcrousavy@hotmail.com">📧</a>
-		  </p>
-		  <p align="center">
-			  <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'>
-			  </script>
-			  <script type='text/javascript'>kofiwidget2.init('Buy Me a Coffee', '#46b798', 'F1F8CLXG');kofiwidget2.draw();
-			  </script>
-		  </p>
-	  </div>
-	  <!--
+<html>
 
-<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="de_DE" data-type="horizontal" data-theme="light" data-vanity="mrousavy"><a class="LI-simple-link" href='https://at.linkedin.com/in/mrousavy?trk=profile-badge'>Marc Rousavy</a></div>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="slideshow"> 
-	<img src="Images/Banner.jpeg" class="slideshow-image" />
-	<div class="slideshow-inside">
-	  <div class="slideshow-inside-text" style="background-color:#f7f7f7"> 
-	    <img src="Images/Profilepic_round.png" width="200" />
-	    <br />
-            <img src="Images/mrousavy.png" width="200" />
-            <h2 class="project-tagline" style="color:gray">GitHub Profile Info</h2>
-            <a href="https://github.com/mrousavy" class="btn glare" margin="3">View on GitHub</a>
-	  </div>
+	<title>Marc Rousavy | GitHub portfolio page</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- Leave those next 4 lines if you care about users using IE8 -->
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	<style>
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			color: #4A4E69 !important;
+			font-weight: 300;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		p {
+			color: #4A4E69;
+			font-weight: 300;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.profile-pic {
+			box-shadow: 5px 5px 5px 5px lightgrey;
+			border-radius: 50%
+		}
+
+		.m-t-1 {
+			margin-top: 1em;
+		}
+
+		.p-t-1 {
+			padding-top: 1em;
+		}
+
+
+		.about-me {
+			margin-top: 25px;
+		}
+
+		.navbar-default {
+			background-color: #C9ADA7;
+			background: none;
+			border: none;
+			border-radius: 0;
+		}
+
+		.repo-row {
+			padding: 65px 10px;
+		}
+
+		.repo-row:nth-child(odd) {
+			background-color: lightgrey;
+			-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+			clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+		}
+
+		.vertical-align {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		@media (max-width: 991px) {
+			.row.vertical-align {
+				display: block;
+				/* Turn off the flexible box layout */
+			}
+		}
+
+		.work-item-img {
+			max-height: 480px;
+			max-width: 80%;
+		}
+
+		.row-footer {
+			/*	background-color: lightgrey;
+				-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);
+				clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);*/
+			padding: 65px 10px;
+		}
+
+		.linkedin-btn {
+			width: 140px;
+			box-shadow: 0px 2px 5px 1px lightgrey;
+			padding: 12px;
+			border-radius: 5px;
+		}
+
+		.btn-launch {
+			width: 100%;
+			max-width: 200px;
+			background-color: #549657;
+			color: white;
+			box-shadow: 0px 2px 5px 1px darkgrey;
+		}
+
+		.btn-launch:hover,
+		.btn-launch:focus {
+			color: white;
+			background: #3d7140;
+		}
+
+		.techUsed {
+			font-size: 54px;
+			padding: 40px 0 0;
+		}
+
+		.techUsed i {
+			margin: 0 15px;
+		}
+
+		.toolsUsed {
+			font-size: 100px;
+			padding: 40px 0;
+		}
+
+		.toolsUsed i {
+			margin: 0 15px;
+		}
+
+		.about {
+			margin-bottom: 80px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+
+	<div class="container-fluid">
+
+		<section class="about">
+			<div class="text-center" style="margin-top:100px">
+				<img src="https://raw.githubusercontent.com/mrousavy/mrousavy.github.io/master/Images/pp_sq.jpeg" width=200 class="profile-pic">
+				<h1>Marc Rousavy</h1>
+				<h3>Vienna, Austria 🇦🇹</h3>
+				<h5>
+					I&#x27;m a full-stack developer and Student.
+					<br />
+					I mostly code in <b>C#/WPF</b>, <b>C++/Qt</b>, <b>Node.js/Electron</b> and <b>Swift/Cocoa</b>.
+					<br />
+					Feel free to contact me via email! 📧
+				</h5>
+
+				<div class="text-center" style="margin:20px">
+					<a href="mailto:marcrousavy@hotmail.com" class="" target="_blank">
+						marcrousavy@hotmail.com
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="repos">
+			<div class="row repo-row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="row vertical-align">
+						<div class="col-xs-12 col-md-8">
+							<img src="https://raw.githubusercontent.com/mrousavy/ImgurSniper/master/ImgurSniper.UI/Resources/SnipeDemo.gif"
+							 class="img-responsive work-item-img center-block">
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<h2><a href="https://github.com/mrousavy/ImgurSniper" target="blank">ImgurSniper</a></h2>
+							<p>A quick and easy Image, Screenshot and Screen recording sharing tool written in C#.NET + WPF</p>
+						</div>
+
+					</div>
+					<div class="row text-center techUsed">
+						<div class="col-xs-12">
+							<i class="devicon-csharp-plain-wordmark colored"></i>
+							<i class="devicon-dot-net-plain-wordmark colored"></i>
+							<i class="devicon-visualstudio-plain-wordmark colored"></i>
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</div>
+					</div>
+					<div class="row text-center" style="margin:20px;">
+						<a class="btn btn-launch" href="https://github.com/mrousavy/ImgurSniper" target="blank">View on GitHub</a>
+					</div>
+				</div>
+			</div>
+			<div class="row repo-row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="row vertical-align">
+						<div class="col-xs-12 col-md-8">
+							<img src="https://raw.githubusercontent.com/mrousavy/BrabeNetz/master/Images/mac_cout_digits.png" class="img-responsive work-item-img center-block">
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<h2><a href="https://github.com/mrousavy/BrabeNetz" target="blank">BrabeNetz</a></h2>
+							<p>A fast and clean supervised neural network in C++, capable of effectively using multiple cores - Library and
+								digit recognition demo app</p>
+						</div>
+
+					</div>
+					<div class="row text-center techUsed">
+						<div class="col-xs-12">
+							<i class="devicon-cplusplus-plain-wordmark colored"></i>
+							<i class="devicon-visualstudio-plain-wordmark colored"></i>
+							<i class="devicon-vim-plain-wordmark colored"></i>
+							<i class="devicon-linux-plain-wordmark colored"></i>
+							<i class="devicon-apple-plain-wordmark colored"></i>
+							<i class="devicon-windows8-plain-wordmark colored"></i>
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</div>
+					</div>
+					<div class="row text-center" style="margin:20px;">
+						<a class="btn btn-launch" href="https://github.com/mrousavy/BrabeNetz" target="blank">View on GitHub</a>
+					</div>
+				</div>
+			</div>
+			<div class="row repo-row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="row vertical-align">
+						<div class="col-xs-12 col-md-8">
+							<img src="https://github.com/mrousavy/GameFinder/raw/master/Images/demo.gif" class="img-responsive work-item-img center-block">
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<h2><a href="https://github.com/mrousavy/GameFinder" target="blank">GameFinder</a></h2>
+							<p>An application for finding games to play you and your friends have on Steam written in C#.NET + MVVM WPF</p>
+						</div>
+
+					</div>
+					<div class="row text-center techUsed">
+						<div class="col-xs-12">
+							<i class="devicon-csharp-plain-wordmark colored"></i>
+							<i class="devicon-dot-net-plain-wordmark colored"></i>
+							<i class="devicon-visualstudio-plain-wordmark colored"></i>
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</div>
+					</div>
+					<div class="row text-center" style="margin:20px;">
+						<a class="btn btn-launch" href="https://github.com/mrousavy/GameFinder" target="blank">View on GitHub</a>
+					</div>
+				</div>
+			</div>
+			<div class="row repo-row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="row vertical-align">
+						<div class="col-xs-12 col-md-8 col-md-push-4">
+							<img src="https://raw.githubusercontent.com/mrousavy/Doodler/master/Images/WPF_Demo.gif" class="img-responsive work-item-img center-block">
+						</div>
+						<div class="col-xs-12 col-md-4 col-md-pull-8">
+							<h2><a href="https://github.com/mrousavy/Doodler" target="blank">Doodler</a></h2>
+							<p>A text or date poll application including statistics and notifications with a WPF MVVM Windows and CLI
+								cross-platform frontend</p>
+						</div>
+
+					</div>
+					<div class="row text-center techUsed">
+						<div class="col-xs-12">
+							<i class="devicon-csharp-plain-wordmark colored"></i>
+							<i class="devicon-dot-net-plain-wordmark colored"></i>
+							<i class="devicon-visualstudio-plain-wordmark colored"></i>
+							<i class="devicon-git-plain-wordmark colored"></i>
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</div>
+					</div>
+					<div class="row text-center" style="margin:20px;">
+						<a class="btn btn-launch" href="https://github.com/mrousavy/Doodler" target="blank">View on GitHub</a>
+					</div>
+				</div>
+			</div>
+			<div class="row repo-row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="row vertical-align">
+						<div class="col-xs-12 col-md-8">
+							<img src="https://raw.githubusercontent.com/mrousavy/AnimatedGif/master/AnimatedGif/Icon.ico" class="img-responsive work-item-img center-block">
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<h2><a href="https://github.com/mrousavy/AnimatedGif" target="blank">AnimatedGif</a></h2>
+							<p>A high performance .NET library for reading and creating animated GIFs</p>
+						</div>
+
+					</div>
+					<div class="row text-center techUsed">
+						<div class="col-xs-12">
+							<i class="devicon-csharp-plain-wordmark colored"></i>
+							<i class="devicon-dot-net-plain-wordmark colored"></i>
+							<i class="devicon-visualstudio-plain-wordmark colored"></i>
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</div>
+					</div>
+					<div class="row text-center" style="margin:20px;">
+						<a class="btn btn-launch" href="https://github.com/mrousavy/AnimatedGif" target="blank">View on GitHub</a>
+					</div>
+				</div>
+			</div>
+			<div class="row repo-row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="row vertical-align">
+						<div class="col-xs-12 col-md-8 col-md-push-4">
+							<img src="https://raw.githubusercontent.com/mrousavy/Jellyfish/master/Images/jellyfish.png" class="img-responsive work-item-img center-block">
+						</div>
+						<div class="col-xs-12 col-md-4 col-md-pull-8">
+							<h2><a href="https://github.com/mrousavy/Jellyfish" target="blank">Jellyfish</a></h2>
+							<p>An incredibly lightweight and type safe MVVM library for .NET WPF, Silverlight, Xamarin and UWP written in
+								C#.NET</p>
+						</div>
+
+					</div>
+					<div class="row text-center techUsed">
+						<div class="col-xs-12">
+							<i class="devicon-csharp-plain-wordmark colored"></i>
+							<i class="devicon-dot-net-plain-wordmark colored"></i>
+							<i class="devicon-visualstudio-plain-wordmark colored"></i>
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</div>
+					</div>
+					<div class="row text-center" style="margin:20px;">
+						<a class="btn btn-launch" href="https://github.com/mrousavy/Jellyfish" target="blank">View on GitHub</a>
+					</div>
+				</div>
+			</div>
+			<div class="row repo-row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="row vertical-align">
+						<div class="col-xs-12 col-md-8 col-md-push-4">
+							<img src="https://github.com/mrousavy/PostShot/blob/master/res/app-icon.png" class="img-responsive work-item-img center-block">
+						</div>
+						<div class="col-xs-12 col-md-4 col-md-pull-8">
+							<h2><a href="https://github.com/mrousavy/PostShot" target="blank">PostShot</a></h2>
+							<p>An easy to use, lightning fast, cross platform, and modern screenshot and screen-recording tool written in
+								C++ and Qt</p>
+						</div>
+
+					</div>
+					<div class="row text-center techUsed">
+						<div class="col-xs-12">
+							<i class="devicon-cplusplus-plain-wordmark colored"></i>
+							<i class="devicon-linux-plain-wordmark colored"></i>
+							<i class="devicon-apple-plain-wordmark colored"></i>
+							<i class="devicon-windows8-plain-wordmark colored"></i>
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</div>
+					</div>
+					<div class="row text-center" style="margin:20px;">
+						<a class="btn btn-launch" href="https://github.com/mrousavy/PostShot" target="blank">View on GitHub</a>
+					</div>
+				</div>
+			</div>
+			<div class="row repo-row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="row vertical-align">
+						<div class="col-xs-12 text-center">
+							<h2><a href="https://github.com/mrousavy/GenericProtocol" target="blank">GenericProtocol</a></h2>
+							<p>A fast TCP event based buffered server/client protocol library for transferring data over the (inter)net in
+								.NET</p>
+						</div>
+
+					</div>
+					<div class="row text-center techUsed">
+						<div class="col-xs-12">
+							<i class="devicon-csharp-plain-wordmark colored"></i>
+							<i class="devicon-dot-net-plain-wordmark colored"></i>
+							<i class="devicon-visualstudio-plain-wordmark colored"></i>
+							<i class="devicon-github-plain-wordmark colored"></i>
+						</div>
+					</div>
+					<div class="row text-center" style="margin:20px;">
+						<a class="btn btn-launch" href="https://github.com/mrousavy/GenericProtocol" target="blank">View on GitHub</a>
+					</div>
+				</div>
+			</div>
+
+
+
+		</section>
+
+		<div class="row row-footer text-center">
+			<div class="col">
+				<div style="margin:50px;">
+					<h3 style="margin:50px 0 15px">I'm available for work, get in touch</h3>
+					<a href="mailto:marcrousavy@hotmail.com" class="" target="_blank">
+						marcrousavy@hotmail.com
+					</a>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
 	</div>
-    </div>
 
-    <section class="main-content">
-        <h1>Languages</h1>
-        <ul>
-            <li>
-                <h2>Back-End:</h2>
-                <ul>
-                    <li>
-                        <b>C#</b>
-                    </li>
-                    <li>
-                        <b>Java</b>
-                    </li>
-                    <li>
-                        <b>C++</b> (Basic skills)
-                    </li>
-                    <li>
-                        <b>Python</b> (Basic skills)
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Front-End:</h2>
-                <ul>
-                    <li>
-                        <b>Markup Languages</b> (XAML, AXML, WPF, HTML, ...)
-                    </li>
-                    <li>
-                        <b>Java Swing</b>
-                    </li>
-                    <li>
-                        <b>JavaFX</b>
-                    </li>
-                    <li>
-                        <b>CSS</b> (Basic skills)
-                    </li>
-                </ul>
-            </li>
-        </ul>
 
-        <h1>Repositories</h1>
+	<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+	<!-- <script src="js/myScripts.js"></script> -->
 
-        <div class="container">
-		    <figure>
-			    <img src="https://mrousavy.github.io/ImgurSniper/Images/Logo.png" alt="ImgurSniper Logo"
-				 width="250" height="250" />
-			    <figcaption><div>ImgurSniper</div></figcation>
-		    </figure>
-		    <figure>
-			    <img src="https://raw.githubusercontent.com/mrousavy/Kern/master/KernClient/Resources/KernLogo.ico" alt="Kern Logo"
-				 width="250" height="250" />
-			    <figcaption><div>Kern</div></figcation>
-		    </figure>
-		    <figure>
-			    <img src="https://raw.githubusercontent.com/mrousavy/Toast/master/ToastDemo/Resources/Toast_Icon.ico" alt="Toast Logo"
-				 width="250" height="250" />
-			    <figcaption><div>Toast</div></figcation>
-		    </figure>
-		    <figure>
-			    <img src="https://raw.githubusercontent.com/mrousavy/BmpPwd/master/Images/Logo.png" alt="BmpPwd Logo"
-				 width="250" height="250" />
-			    <figcaption><div>BmpPwd</div></figcation>
-		    </figure>
-		    <figure>
-			    <img src="https://raw.githubusercontent.com/mrousavy/WebUntisSharp/master/Images/Logo.png" alt="WebUntisSharp Logo"
-				 width="250" height="250" />
-			    <figcaption><div>WebUntisSharp</div></figcation>
-		    </figure>
-		    <figure>
-			    <img src="https://raw.githubusercontent.com/mrousavy/Hotkeys/master/Images/Logo.png" alt="Hotkeys Logo"
-				 width="250" height="250" />
-			    <figcaption><div>Hotkeys</div></figcation>
-		    </figure>
-        </div>
-        <a href="https://github.com/mrousavy?tab=repositories" class="buttons">View all</a>
-    </section>
-	-->
-  </body>
+</body>
+
 </html>
