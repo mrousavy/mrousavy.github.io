@@ -14,6 +14,8 @@
 
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
+	<script src="https://unpkg.com/scrollreveal"></script>
+
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- Leave those next 4 lines if you care about users using IE8 -->
 	<!--[if lt IE 9]>
@@ -486,10 +488,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
 	</div>
 
 
@@ -499,6 +497,20 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	 crossorigin="anonymous"></script>
 	<!-- <script src="js/myScripts.js"></script> -->
+	<script>
+		var optionsLeft =  {
+			origin: 'left',
+			distance: '100%',
+			duration: 1000
+		}
+		var optionsRight =  {
+			origin: 'right',
+			distance: '100%',
+			duration: 1000
+		}
+		ScrollReveal().reveal('.col-md-8', optionsLeft);
+		ScrollReveal().reveal('.col-md-push-4', optionsRight);
+	</script>
 
 </body>
 
