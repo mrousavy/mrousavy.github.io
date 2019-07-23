@@ -1,5 +1,5 @@
 var today = new Date();
-var birthDate = new Date(2000, 5, 15);
+var birthDate = new Date("5/15/2000");
 
 function getAge() {
     var age = today.getFullYear() - birthDate.getFullYear();
@@ -12,7 +12,7 @@ function getAge() {
 
 document.getElementById("about-me-intro").innerHTML = `I&#x27;m a ${getAge()} year old full-stack developer and IT Student.`
 
-if (today.getMonth() == birthDate.getMonth() && today.getDay() == birthDate.getDay()) {
+if (today.getMonth() == birthDate.getMonth() && today.getDate() == birthDate.getDate()) {
     document.getElementById("about-me-intro").innerHTML = `I&#x27;m a ${getAge()} year old full-stack developer and IT Student. <br/><br/><b><font size=3>Today is my birthday! 🎉</font></b>`
     confetti.start();
 }
