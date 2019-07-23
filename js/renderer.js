@@ -12,7 +12,7 @@ function getAge() {
 
 document.getElementById("about-me-intro").innerHTML = `I&#x27;m a ${getAge()} year old full-stack developer and IT Student.`
 
-if (true || today.getMonth() == birthDate.getMonth() && today.getDay() == birthDate.getDay()) {
+if (today.getMonth() == birthDate.getMonth() && today.getDay() == birthDate.getDay()) {
     document.getElementById("about-me-intro").innerHTML = `I&#x27;m a ${getAge()} year old full-stack developer and IT Student. <br/><br/><b><font size=3>Today is my birthday! 🎉</font></b>`
     confetti.start();
 }
