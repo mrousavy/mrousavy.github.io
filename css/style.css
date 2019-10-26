@@ -104,13 +104,13 @@ h2 {
 .delaycontent { -webkit-animation-delay: 0.8s; animation-delay: 0.8s;}
 /* ----- content ----- */
 .photo {
-	background-image: url(../img/pp.png);
-	/*transform: rotate(-20deg);*/
+	background-image: url(../img/me.png);
+	background-size: 300px 100px;
 	background-repeat: no-repeat;
 	background-size: contain;
 /* 	height: 40vw; */
-	height: 45vh;
-	margin: -50vh 0 0 -85vh;
+	height: 69vh;
+	margin: -50vh 0 0 -60vh;
 /* 	margin: -60% 0 0 -60%; */
 }
 	@media screen and (max-width: 767px) {
