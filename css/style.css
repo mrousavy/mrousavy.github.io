@@ -119,6 +119,35 @@ h2 {
 			margin: 10vh 0;
 		}
 	}
+
+.project{
+	max-width: 50%;
+	margin-top: 10vh;
+	margin-bottom: 20vh;
+	margin-left: 50%;
+}
+.projectleft{
+	max-width: 50%;
+	margin-top: 10vh;
+	margin-bottom: 20vh;
+	margin-right: 50%;
+}
+.previewimg {
+	max-height: 35vh;
+	max-width: 80%;
+	margin: -30vh 0 0 -90%;
+	text-align: right;
+	display: block;
+	align-content: right;
+}
+.previewimgleft {
+	max-height: 35vh;
+	max-width: 80%;
+	margin: -30vh 0 0 120%;
+	text-align: right;
+	display: block;
+	align-content: right;
+}
 .content {
 	max-width: 40%;
 	margin-top: 10vh;
@@ -127,6 +156,11 @@ h2 {
 }
 	@media screen and (max-width: 767px) {
 		.content {
+			max-width: 100%;
+			margin-top: 0;
+			margin-left: 0;
+		}
+		.projectleft,.project {
 			max-width: 100%;
 			margin-top: 0;
 			margin-left: 0;
