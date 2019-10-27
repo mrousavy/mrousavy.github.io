@@ -120,6 +120,9 @@ h2 {
 		}
 	}
 
+.contact-list-left {
+	max-width: 40%;
+}
 .project{
 	max-width: 50%;
 	margin-top: 10vh;
@@ -155,15 +158,13 @@ h2 {
 	margin-left: 50%;
 }
 	@media screen and (max-width: 767px) {
-		.content {
+		.content,.projectleft,.project {
 			max-width: 100%;
 			margin-top: 0;
 			margin-left: 0;
 		}
-		.projectleft,.project {
+		.contact-list-left {
 			max-width: 100%;
-			margin-top: 0;
-			margin-left: 0;
 		}
 	}
 p {
