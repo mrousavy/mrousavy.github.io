@@ -157,11 +157,26 @@ h2 {
 	margin-bottom: 20vh;
 	margin-left: 50%;
 }
+.contentright {
+	text-align: right;
+	max-width: 45%;
+	margin-top: 10vh;
+	margin-bottom: 20vh;
+	margin-left: 55%;
+	margin-right: 1vh;
+}
 	@media screen and (max-width: 767px) {
 		.content,.projectleft,.project {
 			max-width: 100%;
 			margin-top: 0;
 			margin-left: 0;
+		}
+		.contentright {
+			max-width: 100%;
+			margin-top: 0;
+			margin-left: 1vh;
+			margin-right: 1vh;
+			margin-bottom: 0;
 		}
 		.contact-list-left {
 			max-width: 100%;
