@@ -53,7 +53,6 @@ h1 {
 	line-height: 80%;
 	color: #FFFFFF;
 	text-transform: uppercase;
-
 }
 	@media screen and (max-width: 767px) {
 		h1 {
@@ -82,6 +81,14 @@ h2 {
 			font-size: 30px;
 		}
 	}
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 80%;
+	color: #FFFFFF;
+	margin: 10vh 0 5vh 0vh;
+}
 /* ----- animation ----- */
 .animate {
 	-webkit-animation:animate .5s cubic-bezier(0.2, 0.6, 0.2, 1);
@@ -134,11 +141,12 @@ h2 {
 	margin-top: 10vh;
 	margin-bottom: 20vh;
 	margin-right: 50%;
+	margin-left: 1%;
 }
 .previewimg {
-	max-height: 35vh;
+	max-height: 50vh;
 	max-width: 80%;
-	margin: -30vh 0 0 -90%;
+	margin: -35vh 0 0 -90%;
 	text-align: right;
 	display: block;
 	align-content: right;
@@ -146,7 +154,7 @@ h2 {
 .previewimgleft {
 	max-height: 35vh;
 	max-width: 80%;
-	margin: -30vh 0 0 120%;
+	margin: -35vh 0 0 120%;
 	text-align: right;
 	display: block;
 	align-content: right;
