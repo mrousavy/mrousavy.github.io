@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 html, body {
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+		-moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     padding:0;
@@ -101,7 +101,7 @@ h2 {
 	100% {opacity: 1;transform: translateY(0%);}
 }
 .delayheader { -webkit-animation-delay: .3s; animation-delay: .3s;}
-.delaycontent { -webkit-animation-delay: 0.8s; animation-delay: 0.8s;}
+.delaycontent { -webkit-animation-delay: 0.8s; animation-delay: 0.8s; }
 /* ----- content ----- */
 .photo {
 	background-image: url(../img/me.png);
@@ -165,6 +165,15 @@ h2 {
 	margin-left: 55%;
 	margin-right: 1vh;
 }
+.content-center {
+	text-align: right;
+  margin: auto;
+  width: 50%;
+}
+.far-left-text {
+	margin-left: 1vh;
+}
+
 	@media screen and (max-width: 767px) {
 		.content,.projectleft,.project {
 			max-width: 100%;
@@ -185,6 +194,7 @@ h2 {
 p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
+	font-weight: 600;
 	color: #FFFFFF;
 	line-height: 125%;
 	margin-bottom: 4vh;
@@ -209,6 +219,15 @@ p a, p a:after, p a:visited {
 	color: #FFFFFF;
 	line-height: 133%;
 }
+.go-back {
+	margin-top: 70vh;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+	color: #FFFFFF;
+	line-height: 133%;
+}
+
 	@media screen and (max-width: 767px) {
 		.contact {
 			font-size: 10vw;
